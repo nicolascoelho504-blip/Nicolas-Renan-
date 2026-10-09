@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio e currículo de informática de Nicolas Renan">
+  <title>Nicolas Renan | Portfólio de Informática</title>
+  <style>
+    :root {
+      --navy: #101b27;
+      --blue: #2588f5;
+      --ink: #17263a;
+      --muted: #53657a;
+      --pale: #eaf1f8;
+      --line: #c9d8e8;
+      --white: #fff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #edf2f7;
+      color: var(--ink);
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.55;
+    }
+    .resume {
+      width: min(1000px, 100%);
+      margin: 28px auto;
+      background: var(--white);
+      box-shadow: 0 12px 36px rgba(15, 35, 55, .14);
+      overflow: hidden;
+    }
+    header {
+      padding: 38px 42px;
+      color: white;
+      background: linear-gradient(120deg, #101923, #1b2b3b);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+    }
+    h1 { margin: 0; font-size: clamp(2.2rem, 6vw, 3.4rem); line-height: 1.1; }
+    h1 span { color: #49a0ff; }
+    .role { font-size: 1.25rem; color: #d3e0ed; margin: 8px 0 4px; }
+    .tagline { margin: 10px 0 0; color: #d3e0ed; max-width: 500px; }
+    .code-mark { font-size: 3.6rem; color: #49a0ff; font-weight: bold; white-space: nowrap; }
+    .layout { display: grid; grid-template-columns: 34% 66%; }
+    aside { background: linear-gradient(#e5edf6, #dce7f2); padding: 30px 28px; }
+    main { padding: 30px 32px; }
+    h2 {
+      margin: 25px 0 12px;
+      padding-bottom: 7px;
+      border-bottom: 2px solid #79b5ff;
+      color: #102f51;
+      font-size: 1.25rem;
+    }
+    aside h2 { margin-top: 25px; font-size: 1.1rem; }
+    .contact { list-style: none; padding: 0; margin: 0; }
+    .contact li { margin: 0 0 12px; overflow-wrap: anywhere; }
+    .contact strong { color: #0e4c85; display: inline-block; width: 25px; }
+    .item { margin-bottom: 17px; }
+    .item-title { display: flex; justify-content: space-between; gap: 12px; font-weight: bold; }
+    .date { color: var(--muted); font-weight: normal; white-space: nowrap; }
+    ul { padding-left: 20px; margin-top: 6px; }
+    li { margin-bottom: 4px; }
+    .skill-group { margin: 15px 0; }
+    .skill-group strong { display: block; margin-bottom: 3px; }
+    .small { color: var(--muted); font-size: .94rem; }
+    footer {
+      margin: 0 24px 24px;
+      padding: 18px;
+      background: var(--navy);
+      color: white;
+      text-align: center;
+      border-radius: 9px;
+      font-style: italic;
+    }
+    .note { color: #6b4b13; background: #fff4d8; border: 1px solid #efd28a; padding: 10px 12px; border-radius: 7px; font-size: .9rem; }
+    @media (max-width: 700px) {
+      .resume { margin: 0; }
+      header { padding: 28px 22px; }
+      .code-mark { display: none; }
+      .layout { grid-template-columns: 1fr; }
+      aside, main { padding: 24px 22px; }
+      .item-title { flex-direction: column; gap: 0; }
+      .date { white-space: normal; }
+    }
+    @media print {
+      body { background: white; }
+      .resume { margin: 0; width: 100%; box-shadow: none; }
+      header, footer { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+    }
+  </style>
+</head>
+<body>
+  <div class="resume">
+    <header>
+      <div>
+        <h1>Nicolas <span>Renan</span></h1>
+        <p class="role">Informática • Tecnologia e Desenvolvimento</p>
+        <p class="tagline">Interesse em tecnologia, lógica e criação de soluções digitais.</p>
+      </div>
+      <div class="code-mark" aria-hidden="true">&lt;/&gt;</div>
+    </header>
+
+    <div class="layout">
+      <aside>
+        <h2>Contato</h2>
+        <ul class="contact">
+          <li><strong>☎</strong> [Seu telefone]</li>
+          <li><strong>✉</strong> [Seu e-mail]</li>
+          <li><strong>⌖</strong> Pinheiro – MA, Brasil</li>
+          <li><strong>in</strong> [LinkedIn, se tiver]</li>
+          <li><strong>⌘</strong> [GitHub, se tiver]</li>
+        </ul>
+
+        <h2>Habilidades técnicas</h2>
+        <div class="skill-group"><strong>Programação</strong><span>HTML, CSS, JavaScript e C# (em aprendizado)</span></div>
+        <div class="skill-group"><strong>Ferramentas</strong><span>Visual Studio Code, Git e GitHub (conforme experiência)</span></div>
+        <div class="skill-group"><strong>Informática geral</strong><span>Uso de computadores, organização de arquivos e softwares</span></div>
+
+        <h2>Habilidades pessoais</h2>
+        <ul>
+          <li>Trabalho em equipe</li>
+          <li>Organização</li>
+          <li>Comunicação</li>
+          <li>Resolução de problemas</li>
+          <li>Vontade de aprender</li>
+        </ul>
+
+        <h2>Idiomas</h2>
+        <ul>
+          <li>Português – nativo</li>
+          <li>Inglês – [nível atual]</li>
+        </ul>
+      </aside>
+
+      <main>
+        <h2>Objetivo profissional</h2>
+        <p>Busco desenvolver meus conhecimentos na área de informática e tecnologia, aprendendo novas ferramentas e contribuindo com dedicação, responsabilidade e criatividade em projetos digitais.</p>
+
+        <h2>Experiência</h2>
+        <div class="item">
+          <div class="item-title"><span>Projetos pessoais e atividades de estudo</span><span class="date">[Período]</span></div>
+          <ul>
+            <li>Prática de conceitos de informática e tecnologia.</li>
+            <li>Desenvolvimento de atividades e pequenos projetos para ampliar conhecimentos.</li>
+          </ul>
+        </div>
+        <p class="small">Se você ainda não tem experiência profissional, mantenha esta seção focada em projetos escolares e pessoais.</p>
+
+        <h2>Formação acadêmica</h2>
+        <div class="item">
+          <div class="item-title"><span>Ensino Médio</span><span class="date">[Ano de conclusão ou previsão]</span></div>
+          <p class="small">[Nome da escola] – [Cidade/Estado]</p>
+        </div>
+
+        <h2>Cursos complementares</h2>
+        <ul>
+          <li>[Nome do curso] – [Instituição e ano]</li>
+          <li>[Curso de informática ou programação, se houver]</li>
+        </ul>
+
+        <h2>Projetos</h2>
+        <div class="item">
+          <div class="item-title"><span>Portfólio pessoal</span><span class="date">Em desenvolvimento</span></div>
+          <p>Esta página apresenta minhas informações, interesses e habilidades na área de informática.</p>
+        </div>
+        <div class="item">
+          <div class="item-title"><span>[Nome de outro projeto]</span><span class="date">[Ano]</span></div>
+          <p>[Descreva brevemente o que você criou, quais ferramentas usou e o que aprendeu.]</p>
+        </div>
+
+        <h2>Informações adicionais</h2>
+        <ul>
+          <li>Interesse em aprender novas tecnologias.</li>
+          <li>Disponibilidade: [preencha se necessário].</li>
+        </ul>
+        <p class="note"><strong>Antes de enviar:</strong> substitua os campos entre colchetes pelos seus dados verdadeiros e remova as habilidades ou experiências que ainda não possui.</p>
+      </main>
+    </div>
+
+    <footer>“Aprender hoje é construir as soluções de amanhã.”</footer>
+  </div>
+</body>
+</html>
